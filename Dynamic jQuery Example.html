@@ -1,0 +1,33 @@
+
+<!-- saved from url=(0040)file:///D:/temptextfiles/qarc75xq0h.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>pre { white-space: pre-wrap; word-wrap: break-word; max-width: 150ch; }</style></head><body><pre>
+
+
+    
+    <title>Dynamic jQuery Example</title>
+    <script src="./Dynamic jQuery Example_files/jquery-3.6.0.min.js.download"></script>
+
+
+    <div id="content" style="background-color: rgb(251, 177, 119);">
+        <p>I've changed the text!</p>
+        <button id="changeText">Change Text</button>
+        <button id="changeColor">Change Color</button>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            // Event handler to change the text on button click
+            $("#changeText").click(function () {
+                $("#content p").text("I've changed the text!");
+            });
+
+            // Event handler to change the background color on button click
+            $("#changeColor").click(function () {
+                var randomColor = '#' + (Math.random().toString(16) + '000000').slice(2, 8);
+                $("#content").css("background-color", randomColor);
+            });
+        });
+    </script>
+
+
+</pre></body></html>
